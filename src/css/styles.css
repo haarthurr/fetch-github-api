@@ -153,6 +153,20 @@ main {
   display: none;
 }
 
+.container .profile-data .repositories ul li .repo-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+  margin-right: 15px;
+}
+
+.container .profile-data .repositories ul li .repo-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 @media (max-width: 1280px) {
   .container {
     flex-direction: column;
@@ -193,4 +207,39 @@ main {
     width: 100%;
     padding: 0;
   }
+}
+
+
+/* EVENTOS */
+
+.container .profile-data .events h2{
+  margin-top: -80px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container .profile-data .events ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .profile-data .events ul li{
+  padding: 10px;
+  border: 1px solid grey;  
+  margin: 10px;
+  display: block;
+  border-radius: 7px;
+}
+
+.container .profile-data .events ul li a{
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.container .profile-data .events ul li a:hover{
+  background-color:hotpink;
+  color: #fff;
+  padding: 5px;
+  border-radius: 7px;
 }
